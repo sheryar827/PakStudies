@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/abltoolbar"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/notimemodesv"
+        android:layout_above="@+id/banner_container"
+        android:layout_below="@+id/abltoolbar">
+
+<LinearLayout
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".NoTimeModeQuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp">
+
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/question_attempted"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            app:arc_text_size="20dp" />
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/question_incorrect"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            app:arc_text_size="20dp" />
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/question_correct"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            app:arc_text_size="20dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Which thing is alive?"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/question"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bird"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:onClick="onClick"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/choice1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="door"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:onClick="onClick"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/choice2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rock"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:onClick="onClick"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/choice3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:onClick="onClick"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/choice4"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="Quit"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="#B71C1C"
+            android:textColor="#fff"
+            android:padding="8dp"
+            android:onClick="onClick"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/quit"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="#008915"
+            android:textColor="#fff"
+            android:padding="8dp"
+            android:onClick="onClick"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/skip"/>
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</RelativeLayout>

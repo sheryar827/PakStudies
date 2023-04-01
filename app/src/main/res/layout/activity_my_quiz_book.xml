@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/abltoolbar"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/banner_container"
+        android:layout_below="@+id/abltoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/choice1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#f0eb79"
+                android:foreground="?attr/selectableItemBackground"
+                android:drawableTop="@drawable/notime"
+                android:paddingTop="25dp"
+                android:text="No Time Mode"
+                android:onClick="onClick"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                tools:targetApi="m" />
+
+
+            <Button
+                android:id="@+id/choice2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#524d47"
+                android:foreground="?attr/selectableItemBackground"
+                android:drawableTop="@drawable/stopwatch"
+                android:paddingTop="25dp"
+                android:text="Time Mode"
+                android:onClick="onClick"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                tools:targetApi="m" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/choice3"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#e7595d"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:drawableTop="@drawable/hourglass"
+                    android:paddingTop="25dp"
+                    android:text="Beat The Time Mode"
+                    android:onClick="onClick"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    tools:targetApi="m" />
+
+
+                <Button
+                    android:id="@+id/choice4"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#a084d1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:drawableTop="@drawable/testprep"
+                    android:paddingTop="25dp"
+                    android:text="Preparation Mode"
+                    android:onClick="onClick"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    tools:targetApi="m" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/quit"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#80e7a9"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:drawableTop="@drawable/exit"
+                    android:paddingTop="25dp"
+                    android:text="Quit"
+                    android:onClick="onClick"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    tools:targetApi="m" />
+
+
+                <Button
+                    android:id="@+id/rate_us"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#cc8d66"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:drawableTop="@drawable/rateus"
+                    android:paddingTop="25dp"
+                    android:text="Rate Us"
+                    android:onClick="onClick"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    tools:targetApi="m" />
+            </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</RelativeLayout>

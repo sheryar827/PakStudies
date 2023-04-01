@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Pak Studies NTS</string>
+    <string name="action_settings">Settings</string>
+    <string name="toolbar_title">Quiz</string>
+    <string name="action_search">Search</string>
+    <string name="action_share">Share</string>
+    <string name="search_hint">Type Quiz name…</string>
+    <string name="questions_answer_sounds">Questions Answer Sounds</string>
+    <string name="questions_answer_sounds_summary">Sounds will be played with correct/wrong answers.</string>
+    <string name="key_questions_answer_sounds">key_questions_answer_sounds</string>
+    <string name="reset_high_score">Rest High Score</string>
+    <string name="reset_high_score_summary">Highest scores of all quizzes will be reset to 0.</string>
+    <string name="set_quiz_timer">Set Quiz Timer</string>
+    <string name="set_quiz_timer_summary">60 Seconds.</string>
+    <string name="key_set_quiz_timer">key_set_quiz_timer</string>
+    <string name="quiz_timer_default_value">60</string>
+    <string name="quiz_timer_dialog_msg">Set timer setting for your quiz. Its the time in which you have to answer a question.</string>
+    <string name="quiz_btt_timer_dialog_msg">Set timer setting for your Beat The Time Mode quiz. Its the time in which you have to answer all the questions.</string>
+    <string name="set_btt_quiz_timer">Set BTT Timer</string>
+    <string name="quiz_btt_timer_default_value">300</string>
+    <string name="set_btt_quiz_timer_summary">300 Seconds.</string>
+    <string name="key_set_btt_quiz_timer">key_set_btt_quiz_timer</string>
+    <string name="key_reset_high_score">key_reset_high_score</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="score_card">Score Card</string>
+    <string name="more_apps">More Apps</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="share_sub">Pak Studies MCQs</string>
+    <string name="share_body1">~ NTS Pak Studies MCQs ~</string>
+    <string name="share_body2">Application That You May Be Interested</string>
+    <string name="share_body3">https://play.google.com/store/apps/details?id=urdutechcrunch.com.pakstudies</string>
+    <string name="app_id">urdutechcrunch.com.pakstudies</string>
+    <string name="total_quiz">92</string>
+    <string name="app_ad_id">ca-app-pub-6193762684080506~9488152996</string>
+    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="inter_ad">ca-app-pub-3940256099942544/1033173712</string>
+
+</resources>

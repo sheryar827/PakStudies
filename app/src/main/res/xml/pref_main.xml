@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:id="@+id/off_on_sound"
+        android:checked="true"
+        android:key="key_questions_answer_sounds"
+        android:summary="@string/questions_answer_sounds_summary"
+        android:title="@string/questions_answer_sounds" />
+
+    <Preference
+        android:summary="@string/reset_high_score_summary"
+        android:key="@string/key_reset_high_score"
+        android:title="@string/reset_high_score">
+    </Preference>
+
+    <EditTextPreference
+        android:defaultValue="@string/quiz_timer_default_value"
+        android:key="@string/key_set_quiz_timer"
+        android:dialogMessage="@string/quiz_timer_dialog_msg"
+        android:summary="@string/set_quiz_timer_summary"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:autofillHints="@string/quiz_timer_default_value"
+        android:inputType="number"
+        android:title="@string/set_quiz_timer"/>
+
+    <EditTextPreference
+        android:defaultValue="@string/quiz_btt_timer_default_value"
+        android:key="@string/key_set_btt_quiz_timer"
+        android:dialogMessage="@string/quiz_btt_timer_dialog_msg"
+        android:summary="@string/set_btt_quiz_timer_summary"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:autofillHints="300"
+        android:inputType="number"
+        android:title="@string/set_btt_quiz_timer"/>
+
+</PreferenceScreen>

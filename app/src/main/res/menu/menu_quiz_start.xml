@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="urdutechcrunch.com.pakstudies.NoTimeModeQuizActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.ImageView">
+    </item>
+    <item
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:title="@string/main_menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_share"
+                android:orderInCategory="102"
+                android:title="@string/action_share"
+                android:icon="@drawable/ic_share_start_black_24dp"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_rateus"
+                android:orderInCategory="103"
+                android:title="@string/rate_us"
+                android:icon="@drawable/ic_star_black_24dp"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_scorecard"
+                android:orderInCategory="104"
+                android:title="@string/score_card"
+                android:icon="@drawable/ic_description_black_24dp"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_moreapps"
+                android:icon="@drawable/ic_apps_black_24dp"
+                android:orderInCategory="105"
+                android:title="@string/more_apps"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+</menu>
